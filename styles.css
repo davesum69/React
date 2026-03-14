@@ -1,3 +1,39 @@
 .samplecontainer {
     background-color: yellowgreen;
 }
+
+/* Navbar styles */
+.navbar {
+    background-color: #333; /* Dark background for contrast */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+}
+
+.nav-list {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center the menu items */
+}
+
+.nav-item a.nav-link {
+    display: block; /* Make links fill the list item area */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none; /* Remove underlines */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover */
+}
+
+.nav-item a.nav-link:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    color: #4CAF50; /* Accent color on hover */
+}
+
+/* Optional: Highlight the active/current page link */
+.nav-item a.active {
+    background-color: #04AA6D;
+    color: white;
+}
