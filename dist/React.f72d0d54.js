@@ -727,7 +727,27 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const mainmenu = /*#__PURE__*/ (0, _reactDefault.default).createElement("nav", {
+/**
+ * Header
+ *  - Logo
+ * -  Nav Items
+ * -  Cart 
+ * Body
+ *  - Search
+ *  - Restaurant List
+ *    - Restaurant Card
+ *      - Image
+ *      - Name
+ *      - Rating
+ *     - Cuisines
+ * 
+ * -Footer
+ *    - Links
+ *    - Copyright
+ *    - Address
+ *     - Contact
+ *      - Social Links
+ */ const mainmenu = /*#__PURE__*/ (0, _reactDefault.default).createElement("nav", {
     id: "mymenu",
     className: "navbar"
 }, [
@@ -762,81 +782,249 @@ const mainmenu = /*#__PURE__*/ (0, _reactDefault.default).createElement("nav", {
         ])
     ])
 ]);
-const BreakingNews = ()=>{
+const Title = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV2bH0yjOBsziAt3KWdW-RhSoJ8drDIDtXsQ&s"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 74,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Title;
+const HeaderComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "newcontainer",
+        className: "header",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Breaking News"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 55,
+                lineNumber: 81,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-itemt",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "nav-list",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#home",
+                                className: "nav-link",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "app.js",
+                                lineNumber: 84,
+                                columnNumber: 36
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 84,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#about",
+                                className: "nav-link",
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "app.js",
+                                lineNumber: 85,
+                                columnNumber: 36
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 85,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#contact",
+                                className: "nav-link",
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "app.js",
+                                lineNumber: 86,
+                                columnNumber: 36
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 86,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "app.js",
+                    lineNumber: 83,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 82,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 80,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = HeaderComponent;
+const BodyComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 96,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Welcome to my React app!"
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 97,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 95,
+        columnNumber: 5
+    }, undefined);
+};
+_c2 = BodyComponent;
+const SearchComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "search",
+        children: "Search"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 104,
+        columnNumber: 5
+    }, undefined);
+};
+_c3 = SearchComponent;
+//   
+const RestaurantList = [
+    {
+        name: "Burger King",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV2bH0yjOBsziAt3KWdW-RhSoJ8drDIDtXsQ&s",
+        rating: 4.0,
+        cuisines: [
+            "American",
+            "Fast Food"
+        ]
+    },
+    {
+        name: "McDonald's",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV2bH0yjOBsziAt3KWdW-RhSoJ8drDIDtXsQ&s",
+        rating: 4.2,
+        cuisines: [
+            "American",
+            "Fast Food"
+        ]
+    }
+];
+const RestaurantCard = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: RestaurantList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "News 1"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: restaurant.image,
+                        alt: restaurant.name
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 57,
-                        columnNumber: 9
+                        lineNumber: 130,
+                        columnNumber: 11
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "News 2"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: restaurant.name
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 58,
-                        columnNumber: 9
+                        lineNumber: 131,
+                        columnNumber: 11
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "News 3"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: [
+                            "Rating: ",
+                            restaurant.rating
+                        ]
+                    }, void 0, true, {
                         fileName: "app.js",
-                        lineNumber: 59,
-                        columnNumber: 9
+                        lineNumber: 132,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            "Cuisines: ",
+                            restaurant.cuisines.join(", ")
+                        ]
+                    }, void 0, true, {
+                        fileName: "app.js",
+                        lineNumber: 133,
+                        columnNumber: 11
                     }, undefined)
                 ]
-            }, void 0, true, {
+            }, restaurant.name, true, {
                 fileName: "app.js",
-                lineNumber: 56,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+                lineNumber: 129,
+                columnNumber: 9
+            }, undefined))
+    }, void 0, false);
+};
+_c4 = RestaurantCard;
+const FooterComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "footer",
+        children: "Footer "
+    }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 54,
+        lineNumber: 142,
         columnNumber: 5
     }, undefined);
 };
-_c = BreakingNews;
-const DisplayComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+_c5 = FooterComponent;
+const LayoutComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            "Display Functional Component",
-            mainmenu,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(BreakingNews, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 70,
+                lineNumber: 149,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(BodyComponent, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 150,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FooterComponent, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 151,
                 columnNumber: 7
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "app.js",
-        lineNumber: 67,
-        columnNumber: 5
-    }, undefined);
+    }, void 0, true);
 };
-_c1 = DisplayComponent;
+_c6 = LayoutComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(DisplayComponent, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(LayoutComponent, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 77,
+    lineNumber: 157,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "BreakingNews");
-$RefreshReg$(_c1, "DisplayComponent");
+var _c, _c1, _c2, _c3, _c4, _c5, _c6;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeaderComponent");
+$RefreshReg$(_c2, "BodyComponent");
+$RefreshReg$(_c3, "SearchComponent");
+$RefreshReg$(_c4, "RestaurantCard");
+$RefreshReg$(_c5, "FooterComponent");
+$RefreshReg$(_c6, "LayoutComponent");
 
   $parcel$ReactRefreshHelpers$5fe5.postlude(module);
 } finally {

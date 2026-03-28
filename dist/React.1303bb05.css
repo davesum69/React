@@ -1,38 +1,33 @@
-.samplecontainer {
-  background-color: #9acd32;
-}
-
-.navbar {
-  background-color: #333;
-  width: 100%;
-  overflow: hidden;
-  box-shadow: 0 2px 4px #0000001a;
-}
-
-.nav-list {
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.header {
+  background-color: #1d0658;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   display: flex;
 }
 
-.nav-item a.nav-link {
-  color: #fff;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: background-color .3s, color .3s;
-  display: block;
+.logo {
+  width: 100px;
+  height: 100px;
 }
 
-.nav-item a.nav-link:hover {
-  color: #4caf50;
-  background-color: #555;
+.nav-itemt {
+  color: #ecc461;
+  justify-content: center;
+  align-items: center;
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+  font-size: 18px;
+  display: flex;
 }
 
-.nav-item a.active {
-  color: #fff;
-  background-color: #04aa6d;
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  height: 325px;
+  margin: 20px;
+  padding: 20px;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 5px #0000001a;
 }
 /*# sourceMappingURL=React.1303bb05.css.map */
